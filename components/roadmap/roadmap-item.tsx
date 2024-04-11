@@ -5,14 +5,14 @@ interface RoadmapItemProps {
 
 export const RoadmapItem = ({title, items}: RoadmapItemProps) => {
   return (
-      <div>
-        <p>{title}</p>
+      <ul className="list-disc pl-6">
+        <li>{title}</li>
 
-        {!!items && <ul className="list-disc pl-8 text-2xl text-left">
+        {!!items && <ul className="list-['\25CB'] pl-8 text-2xl text-left">
           {items.map((item, index) => (
               <li key={index}>{item}</li>
           ))}
         </ul>}
-      </div>
+      </ul>
   )
 }
