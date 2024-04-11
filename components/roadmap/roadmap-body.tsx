@@ -13,7 +13,6 @@ interface RoadmapBodyProps {
 export const RoadmapBody = ({ title, label, children, classNames, rocket }: RoadmapBodyProps) => {
   return (
       <div className={clsx('relative flex flex-col items-start', classNames)}>
-        <div className="relative flex flex-col items-start">
           <div className="relative">
             <Image width={0}
                    height={0}
@@ -29,13 +28,12 @@ export const RoadmapBody = ({ title, label, children, classNames, rocket }: Road
                     sizes="100vw"
                     src={`/rocket-${rocket}.png`}
                     alt="logo"
-                    className="absolute w-[100px] h-auto left-1/2 -translate-x-1/2 top-[-400%] pointer-events-none" />}
+                    className="absolute hidden lg:block w-[100px] h-auto left-1/2 -translate-x-1/2 top-[-400%] pointer-events-none" />}
           </div>
 
           <div className="border-l-2 border-white pl-6 py-2 text-left flex flex-col gap-6">
             {children}
           </div>
-        </div>
       </div>
   );
 };

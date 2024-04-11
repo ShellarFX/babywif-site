@@ -22,9 +22,9 @@ export default function Chart() {
   }, []);
 
   return (
-      <div className="flex items-center h-full w-full justify-center gap-8 md:flex-row flex-col">
+      <div className="flex items-center h-[calc(100vh-60px)] w-full justify-center gap-8 md:flex-row flex-col">
         <div className="max-w-md overflow-hidden z-0" id="integrated-terminal" />
-        <div className="font-bold text-2xl">OR</div>
+        <div className="font-bold text-5xl">OR</div>
         <div className="flex flex-col gap-4">
           <Button size="lg"
                   // color="primary"

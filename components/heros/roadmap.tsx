@@ -7,17 +7,17 @@ export const Roadmap = () => {
   return (
       <div className=" bg-[url('/roadmapbg.png')] bg-cover py-12 w-full items-center flex justify-center">
         <div className="flex flex-col w-full gap-4 max-w-7xl md:px-0 items-center text-center px-6">
-          <div className="flex flex-col gap-2 items-center z-10">
+          <div className="flex flex-col gap-2 items-center z-10 pr-0 lg:pr-64">
             <h1 className="text-7xl lg:text-9xl drop-shadow-md">ROADMAP</h1>
             <Image width={0}
                    height={0}
                    sizes="100vw"
-                   src="/roadmaplabel.png"
+                   src="/roadmap-label.png"
                    alt="logo"
-                   className="w-[450px] h-auto" />
+                   className="w-[300px] md:w-[450px] h-auto" />
           </div>
 
-          <div className="flex w-full mt-4 md:mt-16 gap-8 flex-col lg:flex-row">
+          <div className="flex w-full mt-4 md:mt-16 gap-8 flex-col lg:flex-row items-center md:items-start">
             {/* Q2 2024 */}
             <RoadmapBody title="Q2 2024" label="green" classNames="lg:mt-16" rocket={1}>
               <RoadmapSection title="April">
