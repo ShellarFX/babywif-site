@@ -1,29 +1,21 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
+	name: "BabyWifMeme",
 	description: "Make beautiful websites regardless of your design experience.",
 	navItems: [
 		{
-			label: "Home",
+			label: "HOME",
 			href: "/",
 		},
+		{
+			label: "BUY $BABYWIF",
+			href: "/buy",
+		},
     {
-      label: "Docs",
-      href: "/docs",
+      label: "CHART",
+      href: "/chart",
     },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    }
 	],
 	navMenuItems: [
 		{
