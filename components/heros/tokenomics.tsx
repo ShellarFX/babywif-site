@@ -3,14 +3,13 @@ import Image from 'next/image';
 export const Tokenomics = () => {
   return (
       <div className="bg-gray-400 py-12 w-full items-center flex justify-center">
-        <div className="flex flex-col w-full gap-4 max-w-7xl md:px-0 items-center text-center px-6">
+        <div className="flex flex-col w-full gap-4 max-w-7xl lg:px-0 items-center text-center px-6">
           <h1 className="text-7xl lg:text-9xl text-background">TOKENOMICS</h1>
 
-          <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+          <div className="flex flex-col lg:flex-row gap-8 md:gap-16 items-center">
             <div className="flex flex-col gap-16 md:items-start items-center">
               <div className="flex flex-col gap-2">
-                <h2 className="text-5xl lg:text-7xl text-background">TOTAL
-                                                                     SUPPLY</h2>
+                <h2 className="text-5xl lg:text-7xl text-background">TOTAL SUPPLY</h2>
                 <h2 className="text-5xl lg:text-7xl text-background">999,985,440</h2>
               </div>
 
@@ -23,8 +22,7 @@ export const Tokenomics = () => {
                   </div>
 
                   <div className="flex flex-col gap-2 md:gap-4 items-start">
-                    <h2 className="text-4xl lg:text-5xl text-background whitespace-nowrap">100$
-                                                                                           BURNED</h2>
+                    <h2 className="text-4xl lg:text-5xl text-background whitespace-nowrap">100% BURNED</h2>
                     <h2 className="text-4xl lg:text-5xl text-background">0%</h2>
                     <h2 className="text-4xl lg:text-5xl text-background">$BABYWIF</h2>
                   </div>
@@ -46,7 +44,7 @@ export const Tokenomics = () => {
                      width={0}
                      height={0}
                      sizes="100vw"
-                     className="h-[200px] md:h-[440px] w-auto" />
+                     className="h-[200px] lg:h-[440px] w-auto" />
             </div>
           </div>
         </div>

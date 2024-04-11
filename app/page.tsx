@@ -12,6 +12,7 @@ import { BabywifHero } from '@/components/heros/babywif';
 import { AboutUsHero } from '@/components/heros/about-us';
 import { HowToBuy } from '@/components/heros/how-to-buy';
 import { Tokenomics } from '@/components/heros/tokenomics';
+import { Roadmap } from '@/components/heros/roadmap';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <AboutUsHero />
         <Tokenomics />
         <HowToBuy />
+        <Roadmap />
       </section>
   );
 }
