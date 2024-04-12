@@ -17,12 +17,12 @@ import {
   Button,
   Divider,
 } from '@nextui-org/react';
+import Image from 'next/image'
 
 import { cn } from '@/utils/cn';
 import { siteConfig } from '@/config/site';
 import clsx from 'clsx';
 import { ChevronDownIcon } from '@nextui-org/shared-icons';
-import { Image } from '@nextui-org/image';
 
 export const Navbar = (props: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -46,7 +46,7 @@ export const Navbar = (props: NavbarProps) => {
           {/*	<AcmeIcon size={34} />*/}
           {/*</div>*/}
           {/*<span className="ml-2 text-2xl font-medium">$BABYWIF</span>*/}
-          <Image src="/logo.png" alt="logo" className="w-auto h-12" />
+          <Image width={0} height={0} sizes="100vw" src="/logo.png" alt="logo" className="w-auto h-12" />
         </NavbarBrand>
         {/*<NavbarContent />*/}
 

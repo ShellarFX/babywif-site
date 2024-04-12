@@ -2,10 +2,21 @@ import Image from 'next/image';
 import { RoadmapBody } from '@/components/roadmap/roadmap-body';
 import { RoadmapItem } from '@/components/roadmap/roadmap-item';
 import { RoadmapSection } from '@/components/roadmap/roadmap-section';
+import React from 'react';
 
 export const Roadmap = () => {
   return (
-      <div className=" bg-[url('/roadmapbg.png')] bg-cover py-12 w-full items-center flex justify-center">
+      <div className="relative py-12 w-full items-center flex justify-center">
+        <Image
+            width={0}
+            height={0}
+            sizes="100vw"
+            objectFit="cover"
+            src="/roadmapbg.png"
+            alt="background"
+            className="w-full h-full absolute object-cover lg:object-fill"
+        />
+
         <div className="flex flex-col w-full gap-4 max-w-7xl md:px-0 items-center text-center px-6">
           <div className="flex flex-col gap-2 items-center z-10 pr-0 lg:pr-64">
             <h1 className="text-7xl lg:text-9xl drop-shadow-md">ROADMAP</h1>
@@ -46,9 +57,9 @@ export const Roadmap = () => {
             <RoadmapBody title="Q2 2024" label="red" classNames="lg:mt-[460px]">
               <RoadmapSection title="June">
                 <RoadmapItem title="Community Development." items={[
-                    'Development of a community engagement platform for voting and improvement proposals.',
-                    'Organization of online and offline events to increase Babywif\'s visibility and strengthen the community.',
-                    'Continuation of marketing efforts and public relations to increase adoption and awareness of Babywif.'
+                  'Development of a community engagement platform for voting and improvement proposals.',
+                  'Organization of online and offline events to increase Babywif\'s visibility and strengthen the community.',
+                  'Continuation of marketing efforts and public relations to increase adoption and awareness of Babywif.',
                 ]} />
 
                 <RoadmapItem title="Continued work on listing Babywif on various cryptocurrency exchanges." />
@@ -71,9 +82,9 @@ export const Roadmap = () => {
 
               <RoadmapSection title="September">
                 <RoadmapItem title="Evaluation and Preparation" items={[
-                    'Evaluation of progress and review of Babywif\'s development and marketing strategy.',
-                    'Preparations for the launch of future updates and improvements based on community feedback.',
-                    'Planning of celebration and recognition events for contributors and outstanding community members.',
+                  'Evaluation of progress and review of Babywif\'s development and marketing strategy.',
+                  'Preparations for the launch of future updates and improvements based on community feedback.',
+                  'Planning of celebration and recognition events for contributors and outstanding community members.',
                 ]} />
               </RoadmapSection>
             </RoadmapBody>
@@ -102,6 +113,5 @@ export const Roadmap = () => {
           </div>
         </div>
       </div>
-  )
-      ;
+  );
 };

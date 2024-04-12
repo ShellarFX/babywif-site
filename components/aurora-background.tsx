@@ -1,6 +1,8 @@
 "use client";
+
 import { cn } from "@/utils/cn";
 import React, { ReactNode } from "react";
+import Image from "next/image"
 
 interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
   children: ReactNode;
@@ -16,11 +18,18 @@ export const AuroraBackground = ({
   return (
         <div
             className={cn(
-                "relative flex flex-col bg-[url('/mainbg.jpg')] bg-cover w-full h-full items-center justify-center",
+                "relative flex flex-col w-full h-full items-center justify-center",
                 className
             )}
             {...props}
         >
+          <Image
+              layout="fill"
+              src="/mainbg.jpg"
+              objectFit="cover"
+              alt="background"
+          />
+
           <div className="absolute inset-0 overflow-hidden z-10">
             <div
                 //   I'm sorry but this is what peak developer performance looks like // trigger warning
