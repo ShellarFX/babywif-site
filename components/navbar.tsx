@@ -17,7 +17,7 @@ import {
   Button,
   Divider,
 } from '@nextui-org/react';
-import Image from 'next/image'
+import Image from 'next/image';
 
 import { cn } from '@/utils/cn';
 import { siteConfig } from '@/config/site';
@@ -46,7 +46,9 @@ export const Navbar = (props: NavbarProps) => {
           {/*	<AcmeIcon size={34} />*/}
           {/*</div>*/}
           {/*<span className="ml-2 text-2xl font-medium">$BABYWIF</span>*/}
-          <Image width={0} height={0} sizes="100vw" src="/logo.png" alt="logo" className="w-auto h-12" />
+          <NextLink href="/">
+            <Image width={0} height={0} sizes="100vw" src="/logo.png" alt="logo" className="w-auto h-12" />
+          </NextLink>
         </NavbarBrand>
         {/*<NavbarContent />*/}
 
@@ -72,7 +74,7 @@ export const Navbar = (props: NavbarProps) => {
                 isExternal
                 href="/whitepaper.pdf"
                 className="text-2xl text-foreground"
-                >
+            >
               WHITEPAPER
             </Link>
           </NavbarItem>

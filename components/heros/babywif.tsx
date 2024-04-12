@@ -10,8 +10,10 @@ export const BabywifHero = () => {
       <AuroraBackground>
         <div className="pt-8 md:pt-16 py-12 w-full items-center flex justify-center z-10">
           <div className="flex w-full justify-between items-center gap-12 md:gap-32 max-w-7xl flex-col md:flex-row md:px-0 px-6">
-            <div className="flex flex-col gap-4">
-              <Image width={0} height={0} sizes="100vw" src="/logo.png" alt="logo" className="w-[180px] md:w-[660px] h-auto" />
+            <div className="flex flex-col gap-4 items-center md:items-start">
+              <div className="flex-shrink-0">
+              <Image width={0} height={0} sizes="100vw" src="/logo.png" alt="logo" className="w-[360px] md:w-[660px] h-auto" />
+              </div>
               <div className="text-xl md:text-3xl drop-shadow-[0_2px_2px_rgba(0,0,0,1)]">Babywif embodies a passion for exploring
                                         the world of cryptocurrencies, always
                                         seeking new horizons. With a unique
