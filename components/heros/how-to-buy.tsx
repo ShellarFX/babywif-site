@@ -8,14 +8,13 @@ export const HowToBuy = () => {
       <div className="bg-gradient-to-bl from-[#FF705B] to-[#FFB457] py-12 w-full items-center flex justify-center">
         <div className="flex flex-col w-full gap-4 max-w-7xl md:px-0 items-center text-center px-6">
           <div className="flex gap-12 items-center relative ">
-            {/*<div className="whitespace-nowrap absolute md:static z-[0] top-1/2 left-1/2">*/}
-            <div className="whitespace-nowrap hidden lg:block">
+            <div className="whitespace-nowrap hidden lg:block shrink-0">
               <Image width={0}
                      height={0}
                      sizes="100vw"
                      src="/coin.png"
                      alt="logo"
-                     className="w-[200px] md:w-[800px] h-auto" />
+                     className="w-[400px] h-auto" />
             </div>
 
             <div className="flex flex-col gap-6 items-center">

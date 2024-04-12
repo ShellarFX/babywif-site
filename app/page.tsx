@@ -13,6 +13,7 @@ import { AboutUsHero } from '@/components/heros/about-us';
 import { HowToBuy } from '@/components/heros/how-to-buy';
 import { Tokenomics } from '@/components/heros/tokenomics';
 import { Roadmap } from '@/components/heros/roadmap';
+import { ContactUs } from '@/components/heros/contact-us';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Tokenomics />
         <HowToBuy />
         <Roadmap />
+        <ContactUs />
       </section>
   );
 }

@@ -68,7 +68,7 @@ export default function RootLayout({
 
               <div className="flex flex-col gap-2">
                 {siteConfig.socials.map((social, index) => (
-                    <>
+                    <div key={index}>
                       <Link
                           className="justify-between mb-2 text-foreground w-full text-xl w-64"
                           href={social.href}
@@ -80,7 +80,7 @@ export default function RootLayout({
 
                       {index < siteConfig.socials.length - 1 &&
                           <Divider className="opacity-50" />}
-                    </>
+                    </div>
                 ))}
               </div>
             </div>
