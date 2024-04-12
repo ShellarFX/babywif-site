@@ -34,8 +34,10 @@ export const BabywifHero = () => {
               <div className="flex w-full justify-center mt-2 md:mt-8">
                 <Button size="lg"
                         as={Link}
-                        className="bg-amber-400 text-background min-w-unit-48 min-h-unit-16 text-2xl"
-                        endContent={<TelegramIcon className={'h-12 w-12'} />}>JOIN
+                        href="https://t.me/BabydogwifhatonSol"
+                        isExternal
+                        className="bg-amber-400 text-background min-w-unit-64 min-h-unit-18 text-4xl hover:scale-110"
+                        endContent={<TelegramIcon className={'h-16 w-16'} />}>JOIN
                                                                               US</Button>
               </div>
             </div>
