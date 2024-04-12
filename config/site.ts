@@ -58,4 +58,22 @@ export const siteConfig = {
 		discord: "https://discord.gg/9b6yyZKmH4",
     sponsor: "https://patreon.com/jrgarciadev"
 	},
+	socials: [
+		{
+			label: 'Twitter',
+			href: 'https://x.com/babywifmeme',
+		},
+		{
+			label: 'Telegram',
+			href: 'https://t.me/BabydogwifhatonSol',
+		},
+		{
+			label: 'Instagram',
+			href: 'https://instagram.com/babywifhat',
+		},
+		{
+			label: 'Tiktok',
+			href: 'https://tiktok.com/@babydogwifhat',
+		},
+	]
 };

@@ -24,25 +24,6 @@ import clsx from 'clsx';
 import { ChevronDownIcon } from '@nextui-org/shared-icons';
 import { Image } from '@nextui-org/image';
 
-const socials = [
-  {
-    label: 'Twitter',
-    href: 'https://x.com/babywifmeme',
-  },
-  {
-    label: 'Telegram',
-    href: 'https://t.me/BabydogwifhatonSol',
-  },
-  {
-    label: 'Instagram',
-    href: 'https://instagram.com/babywifhat',
-  },
-  {
-    label: 'Tiktok',
-    href: 'https://tiktok.com/@babydogwifhat',
-  },
-];
-
 export const Navbar = (props: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -107,7 +88,7 @@ export const Navbar = (props: NavbarProps) => {
                     title: 'text-2xl !antialiased',
                   }}
               >
-                {socials.map((social, index) => (
+                {siteConfig.socials.map((social, index) => (
                     <DropdownItem
                         key="autoscaling"
                     >
@@ -182,7 +163,7 @@ export const Navbar = (props: NavbarProps) => {
               </NavbarMenuItem>
           ))}
 
-          {socials.map((social, index) => (
+          {siteConfig.socials.map((social, index) => (
               <NavbarMenuItem key={index}>
                 <Link
                     className="justify-between mb-2 text-foreground w-full"
@@ -193,7 +174,7 @@ export const Navbar = (props: NavbarProps) => {
                   {social.label}
                 </Link>
 
-                {index < socials.length - 1 &&
+                {index < siteConfig.socials.length - 1 &&
                     <Divider className="opacity-50" />}
               </NavbarMenuItem>
           ))}

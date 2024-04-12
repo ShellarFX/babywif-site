@@ -6,6 +6,10 @@ import { Providers } from './providers';
 import { Navbar } from '@/components/navbar';
 import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
+import { Link } from '@nextui-org/link';
+import Image from 'next/image';
+import { Divider, NavbarMenuItem } from '@nextui-org/react';
+import React from 'react';
 
 export const metadata: Metadata = {
   title: {
@@ -45,9 +49,42 @@ export default function RootLayout({
       <Providers>
         <div className="relative flex flex-col">
           <Navbar />
+
           <main className="flex-grow w-full h-full">
             {children}
           </main>
+
+          <footer className="w-full flex justify-center py-8 min-h-64 px-8">
+            <div className="max-w-7xl w-full flex flex-col-reverse lg:flex-row justify-between items-center gap-12 md:gap-24">
+              <div className="flex flex-col items-center gap-4 flex-shrink-0">
+                <Image width={0} height={0} sizes="100vw" src="/logo.png" alt="logo" className="w-[180px] md:w-[320px] h-auto" />
+                <Divider />
+                <div className="text-xl">© 2024 BABYWIF • All Rights Reserved</div>
+              </div>
+
+              <div className="text-xl md:text-3xl text-center">
+                Bringing joy and positivity to the world of cryptocurrencies, one meme at a time
+              </div>
+
+              <div className="flex flex-col gap-2">
+                {siteConfig.socials.map((social, index) => (
+                    <>
+                      <Link
+                          className="justify-between mb-2 text-foreground w-full text-xl w-64"
+                          href={social.href}
+                          isExternal
+                          showAnchorIcon
+                      >
+                        {social.label}
+                      </Link>
+
+                      {index < siteConfig.socials.length - 1 &&
+                          <Divider className="opacity-50" />}
+                    </>
+                ))}
+              </div>
+            </div>
+          </footer>
         </div>
       </Providers>
       </body>
