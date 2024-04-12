@@ -14,6 +14,7 @@ import { HowToBuy } from '@/components/heros/how-to-buy';
 import { Tokenomics } from '@/components/heros/tokenomics';
 import { Roadmap } from '@/components/heros/roadmap';
 import { ContactUs } from '@/components/heros/contact-us';
+import { Whitepaper } from '@/components/heros/whitepaper';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <HowToBuy />
         <Roadmap />
         <ContactUs />
+        {/*<Whitepaper />*/}
       </section>
   );
 }

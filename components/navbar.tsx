@@ -68,6 +68,16 @@ export const Navbar = (props: NavbarProps) => {
           ))}
 
           <NavbarItem>
+            <Link
+                isExternal
+                href="/whitepaper.pdf"
+                className="text-2xl text-foreground"
+                >
+              WHITEPAPER
+            </Link>
+          </NavbarItem>
+
+          <NavbarItem>
             <Dropdown>
               <DropdownTrigger>
                 <Button
@@ -162,6 +172,18 @@ export const Navbar = (props: NavbarProps) => {
                 <Divider className="opacity-50" />
               </NavbarMenuItem>
           ))}
+
+          <NavbarMenuItem>
+            <Link
+                isExternal
+                href="/whitepaper.pdf"
+                className="text-foreground"
+            >
+              WHITEPAPER
+            </Link>
+          </NavbarMenuItem>
+
+          <Divider className="opacity-50" />
 
           {siteConfig.socials.map((social, index) => (
               <NavbarMenuItem key={index}>
