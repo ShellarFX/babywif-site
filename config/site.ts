@@ -65,7 +65,7 @@ export const siteConfig = {
 		},
 		{
 			label: 'Telegram',
-			href: 'https://t.me/BabydogwifhatonSol',
+			href: 'https://t.me/portalbabywifcommunity',
 		},
 		{
 			label: 'Instagram',
