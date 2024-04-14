@@ -54,7 +54,7 @@ export default function RootLayout({
             {children}
           </main>
 
-          <footer className="w-full flex justify-center py-8 min-h-64 px-8">
+          <footer className="w-full flex justify-center py-8 min-h-64 px-8 border-t border-default-400">
             <div className="max-w-7xl w-full flex flex-col-reverse lg:flex-row justify-between items-center gap-12 md:gap-24">
               <div className="flex flex-col items-center gap-4 flex-shrink-0">
                 <Image width={0} height={0} sizes="100vw" src="/logo.png" alt="logo" className="w-[180px] md:w-[320px] h-auto" />

@@ -11,8 +11,9 @@ export default function Chart() {
     window.Jupiter.init({
       displayMode: 'integrated',
       integratedTargetId: 'integrated-terminal',
-      endpoint: 'https://api.mainnet-beta.solana.com',
+      endpoint: 'https://rpc.ankr.com/solana/be803b882075258002f38c39dd68d9044972e690cb572fa1e9e34db4da7ce7a0',
       strictTokenList: false,
+      defaultExplorer: "Solscan",
       formProps: {
         fixedOutputMint: true,
         initialInputMint: 'So11111111111111111111111111111111111111112',
